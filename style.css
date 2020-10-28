@@ -1,0 +1,115 @@
+:root {
+	--primary-color: #8d3030;
+	--secondairy-color: #c34242;
+	--shadow-color: #521111;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	color: white
+}
+
+#toolbar {
+	width: calc(100vw - 10px);
+	height: 50px;
+	background-color: var(--primary-color);
+	box-shadow: 0px 5px 5px var(--shadow-color);
+	padding-left: 10px;
+	font-weight: bold;
+	z-index: 0;
+	position: relative;
+}
+
+#footer {
+	width: calc(100vw - 10px);
+	height: 50px;
+	background-color: var(--primary-color);
+	position: relative;
+	box-shadow: 100px -5px 5px var(--shadow-color);
+	z-index: 20;
+	line-height: 50px;
+	padding-left: 10px;
+	font-weight: bold;
+	position: relative;
+}
+
+#mid-section {
+	height: calc(100vh - 100px);
+	width: 100vw;
+	display: flex;
+}
+
+#menu-bar {
+	background-color: var(--primary-color);
+	width: 100px;
+	box-shadow: 5px 5px 5px var(--shadow-color);
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+
+#view-area {
+	width: calc(100vw - 100px);
+	background-color: var(--secondairy-color);
+}
+
+.menu-item {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.menu-item:hover {
+	background-color: var(--secondairy-color);
+}
+
+#program-view {
+	background-image: url("img/program.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#console {
+	background-image: url("img/console.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#memory-view {
+	background-image: url("img/memory.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#stack-view {
+	background-image: url("img/stack.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#info {
+	background-image: url("img/info.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#settings {
+	background-image: url("img/settings.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logo {
+	background-color: green;
+	width: 80px;
+	height: 40px;
+	margin-top: 5px;
+	margin-right: calc(50vw - 120px);
+	display: inline-block;
+	background-image: url("img/logo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
