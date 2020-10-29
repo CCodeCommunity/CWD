@@ -1,6 +1,7 @@
 :root {
 	--primary-color: #8d3030;
 	--secondairy-color: #c34242;
+	--extra-light-color: #d85f5f;
 	--shadow-color: #521111;
 }
 
@@ -55,6 +56,7 @@ body {
 	width: calc(100vw - 100px);
 	background-color: var(--secondairy-color);
 	padding: 20px;
+	overflow: auto;
 }
 
 .menu-item {
@@ -117,10 +119,17 @@ body {
 
 .memory-prefix {
 	white-space: nowrap;
-	margin-right: -5px;
+	margin-right: 0px;
+}
+
+.memory-content {
+	background-color: var(--extra-light-color);
 }
 
 .memory-cell {
-	border: 1px solid gray;
-	color: black;
+	color: white;
+	font-weight: bold;
+	font-size: x-large;
+	margin: 2px;
+	overflow: hidden;
 }
