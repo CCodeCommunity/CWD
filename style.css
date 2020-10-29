@@ -54,6 +54,7 @@ body {
 #view-area {
 	width: calc(100vw - 100px);
 	background-color: var(--secondairy-color);
+	padding: 20px;
 }
 
 .menu-item {
@@ -112,4 +113,14 @@ body {
 	background-image: url("img/logo.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.memory-prefix {
+	white-space: nowrap;
+	margin-right: -5px;
+}
+
+.memory-cell {
+	border: 1px solid gray;
+	color: black;
 }
