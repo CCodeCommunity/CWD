@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<template>
+<template id="memory-cell-template">
 	<span class="memory-cell">
-		<span class="memory-prefix"></span>
-		<span class="memory-content" contenteditable="true"></span>
+		<span class="memory-prefix">0x</span>
+		<span class="memory-content" contenteditable="true">{{ number }}</span>
 	</span>
 </template>
 
@@ -11,6 +11,8 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
+
+		<script src="libs/TemplateRenderer.js"></script>
 	</head>
 	<body>
 		<div id="toolbar">
@@ -28,25 +30,12 @@
 			</div>
 
 			<div id="view-area">
-				<span class="memory-cell">
-					<span class="memory-prefix">0x</span>
-					<span class="memory-content" contenteditable="true">1234</span>
-				</span>
-				<span class="memory-cell">
-					<span class="memory-prefix">0x</span>
-					<span class="memory-content" contenteditable="true">1234</span>
-				</span>
-				<span class="memory-cell">
-					<span class="memory-prefix">0x</span>
-					<span class="memory-content" contenteditable="true">1234</span>
-				</span>
-				<span class="memory-cell">
-					<span class="memory-prefix">0x</span>
-					<span class="memory-content" contenteditable="true">1234</span>
-				</span>
+
 			</div>
 		</div>
 		
 		<div id="footer">Version 1.0.0</div>
+
+		<script src="./scripts/MemoryView.js"></script>
 	</body>
 </html>
