@@ -1,8 +1,8 @@
 :root {
-	--primary-color: #8d3030;
-	--secondairy-color: #c34242;
-	--extra-light-color: #d85f5f;
-	--shadow-color: #521111;
+	--primary-color: #111;
+	--secondairy-color: #333;
+	--extra-light-color: #666;
+	--shadow-color: #000;
 }
 
 body {
@@ -20,6 +20,8 @@ body {
 	font-weight: bold;
 	z-index: 0;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 #footer {
@@ -57,6 +59,7 @@ body {
 	background-color: var(--secondairy-color);
 	padding: 20px;
 	overflow: unset;
+	overflow-y: scroll;
 }
 
 .menu-item {
@@ -109,11 +112,11 @@ body {
 	width: 80px;
 	height: 40px;
 	margin-top: 5px;
-	margin-right: calc(50vw - 120px);
 	display: inline-block;
 	background-image: url("img/logo.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-right: 40px;
 }
 
 .memory-prefix {
